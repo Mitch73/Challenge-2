@@ -6,11 +6,11 @@ public class PlayerControllerX : MonoBehaviour
 {
     public GameObject dogPrefab;
 
-    void Start()
+   /* void Start()
     {
-        /*InvokeRepeating("SpawnRandomBall", startDelay, spawnInterval);*/
+        *//*InvokeRepeating("SpawnRandomBall", startDelay, spawnInterval);*//*
         StartCoroutine(NewCoroutine());
-    }
+    }*/
     // Update is called once per frame
     void Update()
     {
@@ -20,7 +20,7 @@ public class PlayerControllerX : MonoBehaviour
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
         }
     }
-    IEnumerator NewCoroutine()
+   /* IEnumerator NewCoroutine()
     {
         //Print the time of when the function is first called.
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
@@ -30,5 +30,5 @@ public class PlayerControllerX : MonoBehaviour
 
         //After we have waited 5 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
-    }
+    }*/
 }
